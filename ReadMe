@@ -1,0 +1,37 @@
+The Following IPython notebook is adapted from a workshop I gave on data wrangling with Pandas, it now contains the following four main sections:
+
+Hampshire police data example:
+- Reading in csv files into a Dataframe using Ipython magic
+- How to drop multiple columns 
+- The use of various Pandas methods such as .to_datetime, .value_counts etc  
+- Dataframe masking by string specification 
+- Examples of visualisation using matplotlib's object oriented interface
+
+Converting Numpy data to LaTeX:
+- The removal of Nans from Dataframes using .dropna
+- Replacing Nans in Dataframes with column averages using .fillna
+- Outputting tabular Latex code with Pandas using .to_latex method
+
+Simple least squares regression with statsmodels:
+- A simple example of linear regression with the statsmodels package
+- Setting up and running the linear regression 
+- Viewing the summary results and plotting the residuals 
+- Adding in a squared term into the model and seeing how it effects the     summary values 
+
+Multiple linear regression, dummy variables, prediciting with train/test split:
+- Loading in sklearn toy dataset into a Pandas Dataframe 
+- Add the column names no longer present in the data 
+- Recovering a Gender column which has been transformed into a numeric variable, back into a string column 
+- Apply dummy variables to the new string column and append them to the original Dataframe
+- (Commented out) a quick example how to scale/transform data in a Dataframe
+- Plot each each attribute in the data against the target to check for linearity, this time using matplotlibs functional interface 
+- Place the linearly correlated attributes in a new numpy array 
+- Place the target data in a numpy array 
+- Split the data into a 80/20 training/test set 
+- Apply a linear regression model with all the variables 
+- Plot predicted against test values and observe the model score 
+- Check the variables for collinearity, drop some variables
+- Reapply a linear regression for our improved model and 
+  plot the new models predicted against test values and observe the score
+ 
+The following packages are used: pandas, numpy, matplotlib, pylab, sklearn, scipy, statsmodels, warnings
